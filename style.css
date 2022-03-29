@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Fira Code", monospace;
+  height: 100vh;
+  width: 100%;
+  background-color: #050404;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+a:link,
+a:visited {
+  font-size: 2.8rem;
+  color: #e63946;
+  text-decoration: none;
+  height: 4.2rem;
+  width: 4.2rem;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a:hover,
+a:active {
+  border: 2px solid #e63946;
+  border-radius: 50%;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  height: 4.2rem;
+  border: 2px solid #e63946;
+  border-radius: 20px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #e63946;
+  box-shadow: 1px 1px 10px #e6394770;
+}
+
+.btn-left {
+  padding: 0 40px 0 0;
+}
+
+.btn-right {
+  padding: 0 0 0 40px;
+}
+
+img {
+  height: 3.2rem;
+  background-color: none;
+  filter: invert(21%) sepia(80%) saturate(2193%) hue-rotate(335deg)
+    brightness(115%) contrast(87%);
+}
+button:hover img {
+  filter: invert(0%) sepia(1%) saturate(99%) hue-rotate(117deg) brightness(110%)
+    contrast(97%);
+}
